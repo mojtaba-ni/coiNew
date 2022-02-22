@@ -1,0 +1,43 @@
+.earn{
+    width: 100%;
+    padding: 2rem 0;
+    background-color: var(--homebackground);
+    clip-path: polygon(0 0,100% 10%,100% 100%,0% 90%);
+}
+.earn .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.earn .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+.earn .right p{
+    margin: 1.5rem 0;
+}
+.earn .left{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.earn .top img{
+    max-width: 19rem;
+}
+.earn .top img:hover{ 
+   transform: scale(1.1);
+   transition: 0.5s ease-in-out;
+
+}
+@media screen and (max-width:940px) {
+    .earn .container{
+        grid-template-columns: 1fr;
+    }
+    .earn .right .btn{
+        align-self: center;
+    }
+}
